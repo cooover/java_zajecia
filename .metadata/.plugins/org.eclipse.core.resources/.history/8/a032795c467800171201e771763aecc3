@@ -1,0 +1,17 @@
+package dzien1;
+
+public class J10 {
+
+	public static void main(String[] args) {
+		String napis1 = "tUtAj ";
+		String napis2 = "JeSt ";
+		String napis3 = napis1+napis2;
+		StringBuffer napis4 = new StringBuffer(napis3);
+		napis4.append("bardzo goraco");
+		int wyraz1 = napis1.length();
+		int wyraz2 = napis2.length();	
+		System.out.println(napis4.toString().substring(0, (wyraz1+wyraz2)));
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package dzien2;
+
+public class J18 {
+
+	public static void main(String[] args) {
+		double a = 3.0;
+		double b = -5.0;
+		double r = 5.5;
+		System.out.println(Math.sqrt(a));//pierwiastek z 3
+		System.out.println(Math.abs(b));//wartosc bezwzgledna z -5
+		System.out.println(Math.pow(a,b));//3 do potegi -5
+		System.out.println(Math.pow(a,Math.abs(b)));//3 do potegi 5
+		System.out.println(Math.sqrt(Math.abs(b)));// pierwiastek z 5
+		System.out.println(Math.PI* Math.pow(r, 2));
+		System.out.println(2*Math.PI*r);
+	}
+
+}

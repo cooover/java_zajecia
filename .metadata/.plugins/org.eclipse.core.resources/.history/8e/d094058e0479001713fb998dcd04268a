@@ -1,0 +1,23 @@
+package dzien2;
+
+import java.io.FilterInputStream;
+import java.util.Scanner;
+
+public class J21 {
+
+	public static void main(String[] args) {
+		Scanner wpisz = new Scanner(new FilterInputStream(System.in) {
+			@Override
+			public void close() {}
+		});
+		System.out.println("Podaj pierwsz¹ liczbê: ");
+		double x = wpisz.nextDouble();
+		System.out.println("Podaj drug¹ liczbê: ");
+		double y = wpisz.nextDouble();
+		System.out.println("Pierwsza liczba jest wiêksza od drugiej? "+ (x>y));
+		System.out.println("Lliczby s¹ równe? "+ (x==y));
+		System.out.println("Liczby s¹ nierówne? "+ (x!=y));
+		System.out.println("Pierwsza liczba jest mniejsza od drugiej? "+ (x<y));
+	}
+
+}

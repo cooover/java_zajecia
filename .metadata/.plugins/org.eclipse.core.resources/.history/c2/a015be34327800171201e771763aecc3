@@ -1,0 +1,24 @@
+package dzien1;
+
+import javax.tools.StandardLocation;
+
+public class J7 {
+
+	public static void main(String[] args) {
+		int liczbaI = 5;
+		float liczbaF = 8.3f;
+		double liczbaD;
+		liczbaD = 6.3;
+		final  int StalaI;
+		StalaI = 1;
+		final float StalaF = 9.3f;
+		System.out.println(liczbaI);
+		System.out.println(liczbaF);
+		System.out.println(liczbaD);
+		System.out.println(StalaI);
+		System.out.println(StalaF);
+		
+
+	}
+
+}

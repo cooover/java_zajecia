@@ -1,0 +1,18 @@
+package dzien1;
+
+public class J6 {
+
+	public static void main(String[] args) {
+		int wiek = 26;
+		boolean czyUcz = true;
+		char inicjalI = 'H';
+		char inicjalN = 'K';
+		boolean inicjaly = true;
+		System.out.print("Czeœæ Hanka, s³ysza³em, ¿e masz ");
+		System.out.print(wiek);
+		System.out.println(" lat i uczysz siê programowania, czy to prawda?");
+		
+
+	}
+
+}

@@ -1,0 +1,32 @@
+package Petle;
+
+import java.io.FilterInputStream;
+import java.util.Scanner;
+
+public class TestPetle {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(new FilterInputStream(System.in) {
+			@Override
+			public void close() {}
+		});
+		System.out.println("Ile razy chcesz wypisaæ napis (max 10) ?");
+		int l = input.nextInt();
+		int i;
+		for(i=1; i<=l; i++) {
+			System.out.println(i+" Witaj");
+		}
+		i = 0;
+		String[] teksty = new String[10];
+		for(i=1; i<=l; i++) {
+			System.out.println("Podaj "+i+" napis: ");
+			String napis = input.nextLine();
+			teksty[i-1]=napis;
+		}
+		while(i>=1) {
+			System.out.println(teksty[i]);
+		}
+
+	}
+
+}

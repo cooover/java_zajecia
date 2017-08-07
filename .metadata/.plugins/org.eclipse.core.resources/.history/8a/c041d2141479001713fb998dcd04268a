@@ -1,0 +1,11 @@
+package dzien2;
+
+public class J24 {
+
+	public static void main(String[] args) {
+		String napis = "Hanka";
+		StringBuffer napis1 = new StringBuffer(napis);
+		System.out.println(napis1.reverse());			
+	}
+
+}
