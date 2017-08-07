@@ -1,0 +1,29 @@
+package dzien3;
+
+import java.io.FilterInputStream;
+import java.util.Random;
+import java.util.Scanner;
+
+public class J38 {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(new FilterInputStream(System.in) {
+			@Override
+			public void close() {}
+		});
+		Random gen = new Random();
+		int losowa = gen.nextInt(100);
+		int liczba;
+		System.out.println("Podaj liczbê: ");
+		do {
+			liczba = input.nextInt();
+			if(liczba>losowa) {
+				System.out.println("Poda³eœ za du¿¹ wartoœæ!");
+			}else if(liczba<losowa){
+				System.out.println("Poda³eœ za ma³¹ wartoœæ!");		
+			}	
+		}while(liczba!=losowa);
+		System.out.println("Gratulacje! Wylosowana liczba to: "+losowa);	
+		input.close();
+	}
+}

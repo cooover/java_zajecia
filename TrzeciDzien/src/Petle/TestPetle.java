@@ -26,11 +26,17 @@ public class TestPetle {
 		}
 		while(i>1) {
 			i--;
-			System.out.print(teksty[i-1]+" ");
-		
-			
+			System.out.print(teksty[i-1]+" ");			
 		}
-
+		System.out.println();
+		for(String v : teksty){
+			System.out.print(v+" ");
+		}
+		input.close();
+		/*int[] liczby = new int[3];
+		String[] napisy = new String[3];
+		System.out.println(liczby[0]);
+		System.out.println(napisy[1]); */ // takie tablice wypelnione sa albo zerami alebuo nullami
 	}
 
 }
