@@ -12,7 +12,7 @@ public class J29 {
 			@Override
 			public void close() {}
 		});
-		System.out.println("Któe zadanie chcesz wyœwietliæ? (J26, J27, J28): ");	
+		System.out.println("Które zadanie chcesz wyœwietliæ? (J26, J27, J28): ");	
 		String zad = input.nextLine();
 		switch(zad){
 		case "J26":

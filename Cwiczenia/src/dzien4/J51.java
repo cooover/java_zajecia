@@ -31,7 +31,7 @@ public class J51 {
 			if(mapa.containsKey(a)) {
 				if(zbior.contains(a)) {
 					System.out.println("Masz ju¿ taki produkt w koszyku, czy chcesz dodaæ? (T/N) :");
-					b=input.nextLine();//to skonczylam
+					b=input.nextLine();//tu skonczylam
 				}
 			System.out.println("Cena: "+mapa.get(a));
 			suma= suma+mapa.get(a);
