@@ -1,6 +1,0 @@
-package pierwszapaczka;
-
-public class PierwszyProgram {
-	public float pole1;
-
-}

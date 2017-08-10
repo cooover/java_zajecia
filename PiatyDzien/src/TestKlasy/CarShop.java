@@ -1,6 +1,6 @@
 package TestKlasy;
 
-public class CarShop {
+public class CarShop{
 
 	public static void main(String[] args) {
 		CarShop cs = new CarShop();

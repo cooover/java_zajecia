@@ -1,8 +1,9 @@
 package TestKlasy;
 
-public class Auto {
+	public class Auto {
 	
-	int iloscDrzwi;
+	private int a =1;
+	protected int iloscDrzwi;
 	String kolorNadwozia, kolorFelg, kolorOpon, marka, model;
 	double brutto, cena;
 	
@@ -16,13 +17,13 @@ public class Auto {
 		System.out.println("cena netto: "+cena);
 		System.out.println("cena brutto: "+cena*1.23);
 	}
-	public double rabat() {
+	protected double rabat() {
 		cena= cena*0.9;
 		return cena;
 	}
-	
+	public Auto() {}
 	// konstruktor (zawsze nazywa sie tak jak klasa)
-	Auto(	int iloscDrzwi,  // nie trzeba rozwijac, ale tak jest bardziej widoczne
+	public Auto(	int iloscDrzwi,  // nie trzeba rozwijac, ale tak jest bardziej widoczne
 			String kolorNadwozia, 
 			String kolorFelg, 
 			String kolorOpon, 
