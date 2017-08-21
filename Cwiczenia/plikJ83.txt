@@ -1,0 +1,3 @@
+pierwsza linijka tekstu
+druga linijka
+i trzecia
