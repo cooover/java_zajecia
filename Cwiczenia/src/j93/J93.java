@@ -15,7 +15,7 @@ public class J93 {
 		String path ="";
 		boolean error = true;
 		while(error) {
-			System.out.println("Podaj œcie¿kê dospêpu do pliku J81: ");
+			System.out.println("Podaj œcie¿kê dostêpu do pliku J81: ");
 			try {
 			path = input.nextLine();
 			File testFile = new File(path);
