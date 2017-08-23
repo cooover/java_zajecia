@@ -1,12 +1,17 @@
 package application.controller;
 
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
+import javafx.scene.control.Alert.AlertType;
 import javafx.scene.input.MouseEvent;
 
 public class InfoController {
@@ -44,7 +49,7 @@ public class InfoController {
     	}
     }
     @FXML
-    void sendAction(MouseEvent event) {
+    void sendAction(MouseEvent event) throws FileNotFoundException {
     	String rb_sel="";
     	String cb_sel="";
     	String combo_sel="";
@@ -67,10 +72,25 @@ public class InfoController {
     	if(cb3.isSelected()) {
     		cb_sel += cb3.getText()+": "+tf_other.getText();
     	}    	
-    	info+="Znajomoœæ jêzyków programowaniw: "+cb_sel+"\n";
-    	combo_sel = combo.getSelectionModel().getSelectedItem()+"\n";
+    	info+="Znajomoœæ jêzyków programowania: "+cb_sel+"\n";
+    	combo_sel = "Wybór kursu: "+combo.getSelectionModel().getSelectedItem()+"\n";
     	info+= combo_sel;
-    	System.out.println(info);
+    	if(tf_first.getText().equals("") || tf_last.getText().equals("")) {
+    		Alert a = new Alert(AlertType.INFORMATION);
+    		a.setContentText("Nie poda³eœ imienia lub nazwiska");
+    		a.setTitle("B³¹d");
+    		a.setHeaderText("UWAGA!");
+    		a.showAndWait();
+    	}else {
+    		PrintWriter pw = new PrintWriter("C:\\Users\\Hanka\\Desktop\\Pliki\\"+tf_last.getText()+tf_first.getText()+".txt");
+	    	pw.println(info);
+	    	pw.close();
+	    	Alert a = new Alert(AlertType.INFORMATION);
+			a.setContentText("Dane zosta³y przes³ane");
+			a.setTitle("Dziêkujemy!");
+			a.setHeaderText("Dziêkujemy za wype³nienie ankiety");
+			a.showAndWait();
+	    	}
     }
     
     public void initialize(){
