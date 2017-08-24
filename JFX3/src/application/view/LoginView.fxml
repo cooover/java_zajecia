@@ -6,9 +6,9 @@
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-
 
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="286.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.LoginController">
    <children>
@@ -28,6 +28,12 @@
             <Button fx:id="btn_show" layoutX="203.0" mnemonicParsing="false" onMouseEntered="#showAction" onMouseExited="#hideAction" prefHeight="28.0" prefWidth="81.0" text="Pokaż hasło" />
          </children>
       </AnchorPane>
-      <Button fx:id="btn_login" mnemonicParsing="false" onMouseClicked="#loginAction" prefHeight="28.0" prefWidth="81.0" text="Zaloguj" />
+      <HBox prefHeight="32.0" prefWidth="286.0">
+         <children>
+            <Button fx:id="btn_login" mnemonicParsing="false" onMouseClicked="#loginAction" prefHeight="28.0" prefWidth="81.0" text="Zaloguj" />
+            <Button fx:id="btn_db" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#loginDBAction" prefHeight="28.0" prefWidth="155.0" text="Zaloguj do bazy danych" />
+            <Button fx:id="btn_close" layoutX="91.0" layoutY="10.0" mnemonicParsing="false" onMouseClicked="#closeAction" prefHeight="29.0" prefWidth="86.0" text="Wyjście" />
+         </children>
+      </HBox>
    </children>
 </VBox>
