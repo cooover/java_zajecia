@@ -44,4 +44,5 @@
 <fullyQualifiedTypeName name="javafx.scene.control.PasswordField"/>
 <fullyQualifiedTypeName name="javafx.scene.layout.AnchorPane"/>
 <fullyQualifiedTypeName name="app.Controller.LoginController"/>
+<fullyQualifiedTypeName name="javafx.scene.image.ImageView"/>
 </qualifiedTypeNameHistroy>
